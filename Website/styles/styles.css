@@ -30,9 +30,7 @@ p2{
   left: 50%;
   transform: translateX(-50%);
 }
-p3{
 
-}
 
 .floating-header {
   position: fixed;
