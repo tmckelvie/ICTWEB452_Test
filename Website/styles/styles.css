@@ -26,6 +26,10 @@ title{
   font-weight: bold;
   text-align: center;
 }
+.centered-h1{
+  text-align: center;
+  font-size: 42pt;
+}
 .floating-header {
   position: fixed;
   top: 0;
