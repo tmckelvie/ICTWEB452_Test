@@ -4,157 +4,81 @@
     <meta charset= "UTF-8">
     <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "styles/styles.css">  
-
     <link rel= "preconnect" href= "https://fonts.googleapis.com">
     <link rel= "preconnect" href= "https://fonts.gstatic.com" crossorigin>
     <link href= "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel= "stylesheet">
-    
     <link rel= "icon" type= "image/x-icon" href= "images/pager-solid.png">
     <h1>Contact</h1>
   </head>
-    <body>
-      <header class= "floating-header">
-        <div class= "header-left">
-          <a href= "/index.html">Home</a>
-        </div>
-        <div class= "header-center">
-          <nav class= "nav-links">
-            <p>Contact</p>
-          </nav>
-        </div>
-        <div class= "header-right">
-          <a href= "staff.html">Staff</a>
-          <a>Contact</a>
-        </div>
-      </header>
-
-      <main>
-
-      <div class="form-container">
-        <h2>Email Us</h2>
-          <form action="#" id="emailForm" method="POST">
-              <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required disabled>
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" required disabled></textarea>
-              </div>
-              <button type="submit" id="button" class="submit-btn" disabled>Send Message</button>
-          </form>
+  <body>
+    <header class= "floating-header">
+      <div class= "header-left">
+        <a href= "/index.html">Home</a>
       </div>
-      <br><br>
-      <p2>Phone: XX XXXX XXXX</p2>
-      <br><br>
-      <p2>Fax: XX XXXX XXXX</p2>
-      <br><br>
-      
-      
-      <script>
-          const form = document.getElementById('emailForm');
-          const myname = document.getElementById('name');
-          const myemail = document.getElementById('email');
-          const mymessage = document.getElementById('message');
-          const mybutton = document.getElementById('button');
-          var myinput=null;
-          var isDisabled=false;
-          
-          form.addEventListener('input', (event) => {
-
-            switch (event.target.id){
-              case 'name':
-                myinput=myemail;
-
-                console.info("name event")
-              break;
-              case 'email':
-                myinput=mymessage;
-              break;
-              case 'message':
-                myinput=mybutton;
-              break;
-              
-            }
-
-            if (event.srcElement.value.length === 0) isDisabled=true;
-
-
-            
-            myinput.disabled = isDisabled;
-            
-            /*
-            // Check which specific element triggered the event
-            if (event.target.id === 'name')
-            {
-
-              console.info("input event")
-
-              if(myname.value.length === 0)
-              {
-                console.info("disable input")
-                myemail.disabled = true;
-              }
-              else
-              {
-                console.info("enable input")
-                myemail.disabled = false;
-              }
-              
-              
-            }
-            else if (event.target.id === 'email')
-              {
-
-                console.info("input event")
-
-                if(myemail.value.length === 0)
-                {
-                  console.info("disable input")
-                  mymessage.disabled = true;
-                }
-                else
-                {
-                  console.info("enable input")
-                  mymessage.disabled = false;
-                }
-              }
-              else if (event.target.id === 'message')
-              {
-
-                console.info("input event")
-
-                if(mymessage.value.length === 0)
-                {
-                  console.info("disable input")
-                  mybutton.disabled = true;
-                }
-                else
-                {
-                  console.info("enable input")
-                  mybutton.disabled = false;
-                }
-              }
-              */
-          });
-        
-
-      </script>
-
-      </main>
-      
-
-
+      <div class= "header-center">
+        <nav class= "nav-links">
+          <p>Contact</p>
+        </nav>
+      </div>
+      <div class= "header-right">
+        <a href= "staff.html">Staff</a>
+        <a>Contact</a>
+      </div>
+    </header>
+    <main>
+    <div class="form-container">
+      <h2>Email Us</h2>
+        <form action="#" id="emailForm" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required disabled>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required disabled></textarea>
+            </div>
+            <button type="submit" id="button" class="submit-btn" disabled>Send Message</button>
+        </form>
+    </div>
+    <br><br>
+    <p2>Phone: XX XXXX XXXX</p2>
+    <br><br>
+    <p2>Fax: XX XXXX XXXX</p2>
+    <br><br>
+    <script>
+      const form = document.getElementById('emailForm');
+      const myname = document.getElementById('name');
+      const myemail = document.getElementById('email');
+      const mymessage = document.getElementById('message');
+      const mybutton = document.getElementById('button');
+      var myinput=null;
+      var isDisabled=false;
+      form.addEventListener('input', (event) => {
+        switch (event.target.id){
+          case 'name':
+            myinput=myemail;
+            console.info("name event")
+          break;
+          case 'email':
+            myinput=mymessage;
+          break;
+          case 'message':
+            myinput=mybutton;
+          break;
+        }
+        if (event.srcElement.value.length === 0) isDisabled=true;
+        myinput.disabled = isDisabled;
+      });
+    </script>
+    </main>
   </body>
-
   <footer class= "floating-footer">
-      <div class= "footer-left">
-        <a>© 2026 Murray TAFE. All Rights Reserved</a>
-      </div> 
-    </footer>
-
+    <div class= "footer-left">
+      <a>© 2026 Murray TAFE. All Rights Reserved</a>
+    </div> 
+  </footer>
 </html>
