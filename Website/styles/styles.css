@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
 }
 main {
+  flex: 1;
   margin-top: 5%;
 }
 * {
@@ -17,6 +18,9 @@ main {
   color:#080808;
   font-weight: 350;
   font-style: normal;
+}
+title{
+  font-weight: bold;
 }
 p2{
   position: fixed;
@@ -56,9 +60,6 @@ p2{
   background-color: rgba(33, 192, 165, 0.322);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-main {
-    flex: 1;
 }
 .header-left, .header-center, .header-right, .footer-left{
   display: flex;
@@ -116,7 +117,7 @@ input:focus, textarea:focus {
   color:#080808;
   font-weight: bold;
   font-style: normal;
-  font-size:14;
+  font-size:14pt;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
@@ -131,7 +132,7 @@ input:focus, textarea:focus {
   grid-template-columns: repeat(auto-fill, 350px);
   grid-auto-rows:1fr;
   gap: 10px;
-  margin:5;
+  margin:5px;
   padding:10px;
   justify-content: center;
 }
