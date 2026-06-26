@@ -22,7 +22,12 @@ main {
 title{
   font-weight: bold;
 }
-p2{
+.centered-p{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.centered-h1{
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
