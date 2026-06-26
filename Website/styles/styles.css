@@ -23,14 +23,8 @@ title{
   font-weight: bold;
 }
 .centered-p{
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.centered-h1{
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  font-weight: bold;
+  text-align: center;
 }
 .floating-header {
   position: fixed;
