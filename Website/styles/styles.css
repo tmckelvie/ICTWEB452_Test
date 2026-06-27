@@ -9,7 +9,7 @@ body {
 }
 main {
   flex: 1;
-  margin-top: 5%;
+  margin-top: 70px;
 }
 * {
   box-sizing: border-box;
@@ -75,7 +75,7 @@ title{
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size:32px;
+  font-size:22px;
 }
 .header-right {
   gap: 10px;
