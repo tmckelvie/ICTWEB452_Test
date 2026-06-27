@@ -259,7 +259,6 @@ body {
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
-
 button {
     background-color: var(--btn-bg);
     color: var(--btn-text);
@@ -269,7 +268,15 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #66b2ff !important; /* A light, visible blue */
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #cc99ff !important; /* A contrasting purple for visited links */
+  }
+}
 @media screen and (min-width:800px) {
   
 }
