@@ -35,13 +35,13 @@
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required disabled>
+            <input type="email" id="email" name="email" required>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required disabled></textarea>
+            <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit" id="button" class="submit-btn" disabled>Send Message</button>
+          <button type="submit" id="button" class="submit-btn">Send Message</button>
       </form>
     </div>
     <br>
@@ -53,31 +53,7 @@
       <p class="centered-p">Fax: XX XXXX XXXX</p>
     <br>
     <br>
-    <script>
-      const form = document.getElementById('emailForm');
-      const myname = document.getElementById('name');
-      const myemail = document.getElementById('email');
-      const mymessage = document.getElementById('message');
-      const mybutton = document.getElementById('button');
-      var myinput=null;
-      var isDisabled=false;
-      form.addEventListener('input', (event) => {
-        switch (event.target.id){
-          case 'name':
-            myinput=myemail;
-            console.info("name event")
-          break;
-          case 'email':
-            myinput=mymessage;
-          break;
-          case 'message':
-            myinput=mybutton;
-          break;
-        }
-        if (event.srcElement.value.length === 0) isDisabled=true;
-        myinput.disabled = isDisabled;
-      });
-    </script>
+    <script src="script.js"></script>
     </main>
     <footer class= "floating-footer">
       <div class= "footer-left">
