@@ -79,18 +79,18 @@ title{
 }
 .header-right {
   gap: 10px;
-  padding-right: 10px; 
+  padding-right: 5px; 
   flex-wrap: wrap;
 }
 .header-left {
-  padding-left: 10px; 
+  padding-left: 5px; 
   flex-wrap: wrap;
 }
 .footer-left {
   padding-left: 20px;
 }
 .form-container {
-  background: #fff;
+  background: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -141,7 +141,7 @@ input:focus, textarea:focus {
 }
 .container div {
   top:10px;
-  background-color: #f1f1f1;
+  background-color: white;
   border: 1px solid black;
   border-radius:8px;
   padding: 10px;
