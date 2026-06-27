@@ -272,10 +272,10 @@ button {
   a {
     color: #66b2ff !important; /* A light, visible blue */
     text-decoration: underline;
-  }
-  a:visited {
+    a:visited {
     color: #cc99ff !important; /* A contrasting purple for visited links */
   }
+}
 }
 @media screen and (min-width:800px) {
   
