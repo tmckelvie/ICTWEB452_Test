@@ -30,6 +30,9 @@ title{
   text-align: center;
   font-size: 42pt;
 }
+.centered-p{
+  text-align: center;
+}
 /* Setup our floating header */
 .floating-header {
   position: fixed;
@@ -160,7 +163,6 @@ input:focus, textarea:focus {
 .container div {
   top:10px;
   background-color: white;
-  border: 1px solid black;
   border-radius:8px;
   padding: 10px;
   font-size: 30px;
@@ -180,6 +182,7 @@ input:focus, textarea:focus {
   max-width: 300px;
   max-height:300px;
   background-color: transparent;
+  padding: 5px;
 }
 /* The Modal (background) */
 .modal {
@@ -237,64 +240,7 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 
-/* Default Light Mode variables */
-:root {
-    --bg-color: #ffffff;
-    --text-color: #121212;
-    --btn-bg: #eeeeee;
-    --btn-text: #121212;
-}
 
-/* Dark Mode overrides applied to the html or body element */
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --btn-bg: #333333;
-    --btn-text: #ffffff;
-}
-
-/* Global Styles using variables */
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-button {
-    background-color: var(--btn-bg);
-    color: var(--btn-text);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-:root {
-  --bg-color: #ffffff;
-  --text-color: #333333;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  --bg-color: #333333;
-  --text-color: #ffffff;
-}
-/* Standard Link Color (Light Mode / Default) */
-a {
-  color: #0066cc;
-}
-
-/* Hyperlink Color for Dark Mode */
-@media (prefers-color-scheme: dark) {
-  a {
-    color: #66b2ff; 
-  }
-}
 @media screen and (min-width:800px) {
   
 }
