@@ -1,25 +1,19 @@
-const toggleBtn = document.getElementById("theme-toggle");
+const toggleButton = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme');
 
-// 1. Determine the initial theme
-const getInitialTheme = () => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) return savedTheme;
+// Check for saved preference
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-mode');
+}
 
-    // Check system preference if no localStorage exists
-    const userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    return userPrefersDark ? "dark" : "light";
-};
-
-// 2. Apply theme to the document root element
-const currentTheme = getInitialTheme();
-document.documentElement.setAttribute("data-theme", currentTheme);
-
-// 3. Handle theme click events
-toggleBtn.addEventListener("click", () => {
-    const activeTheme = document.documentElement.getAttribute("data-theme");
-    const newTheme = activeTheme === "dark" ? "light" : "dark";
-
-    // Update the attribute and persist preference
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  
+  // Save preference to localStorage
+  let theme = 'light';
+  if (document.body.classList.contains('dark-mode')) {
+    theme = 'dark';
+  }
+  localStorage.setItem('theme', theme);
 });
+

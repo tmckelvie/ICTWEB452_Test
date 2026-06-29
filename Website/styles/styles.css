@@ -259,6 +259,7 @@ body {
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
+
 button {
     background-color: var(--btn-bg);
     color: var(--btn-text);
@@ -268,14 +269,31 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+}
+/* Standard Link Color (Light Mode / Default) */
+a {
+  color: #0066cc;
+}
+
+/* Hyperlink Color for Dark Mode */
 @media (prefers-color-scheme: dark) {
   a {
-    color: #66b2ff !important; /* A light, visible blue */
-    text-decoration: underline;
-    a:visited {
-    color: #cc99ff !important; /* A contrasting purple for visited links */
+    color: #66b2ff; 
   }
-}
 }
 @media screen and (min-width:800px) {
   
